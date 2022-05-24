@@ -17,7 +17,7 @@
 $request = file_get_contents("php://input");
 
 // optional debug log
-# file_put_contents( 'request.log', $request, FILE_APPEND );
+ file_put_contents( 'request.log', $request, FILE_APPEND );
 
 // retrieve email address from client request
 preg_match( "/\<EMailAddress\>(.*?)\<\/EMailAddress\>/", $request, $email );
